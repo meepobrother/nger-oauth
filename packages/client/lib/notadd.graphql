@@ -1,0 +1,14 @@
+type AccesToken {
+  access_token: String!
+  expires_in: String!
+  refresh_token: String!
+  openid: String!
+  scope: String!
+}
+
+type Query {
+  authorizeUrl(redirectUri: String!, scope: String!, state: String): String!
+  accesToken(code: String!): AccesToken!
+  refreshToken(refreshToken: String!): AccesToken!
+  checkAccessToken(accessToken: String!, openid: String!): Boolean!
+}
