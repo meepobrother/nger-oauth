@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@types/oauth2-server": "^3.0.12",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "oauth2-server": "^3.0.1"
   }
 }
